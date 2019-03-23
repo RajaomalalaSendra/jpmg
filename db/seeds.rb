@@ -11,3 +11,8 @@ malagasy = ['manahoana', 'misaotra betsaka', 'Japana', 'ny rehetra', 'miala tsin
 6.times do |i|
 	Word.create(japanese: japanese[i], romanji: romanji[i], malagasy: malagasy[i])
 end
+require 'csv'
+words = CSV.read("/home/malala/Downloads/fra-eng/fra.csv")
+50.times do |i|
+  Sentence.create(english: words[i][0], french: words[i][1])
+end

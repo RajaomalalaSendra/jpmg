@@ -27,14 +27,20 @@ class BeforeBody extends React.Component{
 		return(
 			<div>
 				<Menu />
-				<h2>日本語好きです。NIHONGO SUKI DESU. Tiako ny teny Japoney.</h2> 
-				<NewWord  handleFormSubmit={this.handleFormSubmit}/>
-				<div className="row">
-					<div className="col-3"><h2>日本語</h2></div>
-					<div className="col-3"><h2>ROMANJI</h2></div>
-					<div className="col-3"><h2>MALAGASY</h2></div>
-				</div>
-	            <Body />
+				<Show />
+				<div className="col-md-10" style={{marginTop: '-100px', marginLeft:'200px'}}>
+					<div className="container bg-light">
+						<h2>日本語好きです。NIHONGO SUKI DESU. Tiako ny teny Japoney.</h2> 
+						<NewWord  handleFormSubmit={this.handleFormSubmit}/>
+						<div className="row">
+							<div className="col-3"><h2>日本語</h2></div>
+							<div className="col-3"><h2>ROMANJI</h2></div>
+							<div className="col-3"><h2>MALAGASY</h2></div>
+						</div>
+		            	<Body />
+		            </div>
+		        </div>
+	            <Footer />
 	        </div>
 		)
 	}

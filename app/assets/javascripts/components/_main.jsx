@@ -1,6 +1,6 @@
 const Main = (props) => {
     return(
-      <div className="container bg-light">
+      <div>
         <BeforeBody />
       </div>
     )

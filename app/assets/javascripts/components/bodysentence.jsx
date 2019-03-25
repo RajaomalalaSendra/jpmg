@@ -8,7 +8,7 @@ class BodySentence extends React.Component{
 		this.updateSentence = this.updateSentence.bind(this);
    	}
    	handleUpDate(sentence){
-	    fetch(`http://localhost:3000/menu/thesaurus/api/v002/sentences/${sentence.id}`, 
+	    fetch(`/menu/thesaurus/api/v002/sentences/${sentence.id}`, 
 	    {
 	      method: 'PUT',
 	      body: JSON.stringify({sentence: sentence}),

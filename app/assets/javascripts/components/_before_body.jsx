@@ -6,7 +6,7 @@ class BeforeBody extends React.Component{
 	}
 	handleFormSubmit(japanese,romanji,malagasy){
 	    let body = JSON.stringify({word: {japanese: japanese, romanji: romanji, malagasy: malagasy}});
-        fetch(`http://localhost:3000/menu/thesaurus/api/v001/words`, {
+        fetch(`/menu/thesaurus/api/v001/words`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

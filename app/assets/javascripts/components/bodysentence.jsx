@@ -4,9 +4,22 @@ class BodySentence extends React.Component{
         	this.state = {
         	sentences: []
       	};
+      	this.handleDelete = this.handleDelete.bind(this);
+		this.deleteSentence = this.deleteSentence.bind(this);
       	this.handleUpDate = this.handleUpDate.bind(this);
 		this.updateSentence = this.updateSentence.bind(this);
    	}
+   	handleDelete(id){
+   		 fetch(`/menu/thesaurus/api/v002/sentences/${id}`, 
+    	{
+      	method: 'DELETE',
+      	headers: {
+        'Content-Type': 'application/json'
+      	}
+      }).then((response) => { 
+        this.deleteSentence(id);
+      })
+ 	}
    	handleUpDate(sentence){
 	    fetch(`/menu/thesaurus/api/v002/sentences/${sentence.id}`, 
 	    {
@@ -26,6 +39,12 @@ class BodySentence extends React.Component{
 	      sentences: newSentences
 	    })
 	 }
+	deleteSentence(id){
+ 		newSentences = this.state.sentences.filter((sentence) => sentence.id !== id)
+        this.setState({
+            words: newSentences
+        })
+ 	}
    	componentDidMount(){
    		fetch('/menu/thesaurus/api/v002/sentences.json')
       		.then((response) => {return response.json()})
@@ -34,7 +53,7 @@ class BodySentence extends React.Component{
 	render(){
 		return(
 			<div>
-				<AllSentences sentences={this.state.sentences} handleUpDate={this.handleUpDate}/>
+				<AllSentences sentences={this.state.sentences} handleDelete={this.handleDelete} handleUpDate={this.handleUpDate}/>
 			</div>
 		)
 	}

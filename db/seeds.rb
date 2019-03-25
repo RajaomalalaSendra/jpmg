@@ -11,7 +11,8 @@ malagasy = ['manahoana', 'misaotra betsaka', 'Japana', 'ny rehetra', 'miala tsin
 6.times do |i|
 	Word.create(japanese: japanese[i], romanji: romanji[i], malagasy: malagasy[i])
 end
-words = [['Go.', 'Hi.', 'Run!', 'Run!', 'Run!', 'Wow!', 'Fire!', 'Help!', 'Jump.', 'Stop!', 'Stop!'],['Va !','Salut !', 'Cours !', 'Courez !', 'Ça alors !', 'Au feu !', 'À l\'aide !','Saute.', 'Ça suffit !', 'Stop !']]
+words = ['Go.', 'Hi.', 'Run!', 'Run!', 'Run!', 'Wow!', 'Fire!', 'Help!', 'Jump.', 'Stop!', 'Stop!']
+words_two = ['Va !','Salut !', 'Cours !', 'Courez !', 'Ça alors !', 'Au feu !', 'À l\'aide !','Saute.', 'Ça suffit !', 'Stop !']
 11.times do |i|
-  Sentence.create(english: words[i][0], french: words[i][1])
+  Sentence.create(english: words[i], french: words_two[i])
 end

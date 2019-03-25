@@ -30,7 +30,7 @@ class EverySentence extends React.Component{
 		        <div className="col-3">{french}</div>
 		        <div className="col-3">{malagasy}</div>
 		        <div className="col-3"><button className="btn btn-default" onClick = {() => this.handleEdit()}>{this.state.editable? 'Submit' : 'Edit'}</button>
-		        <button className="btn btn-danger" onClick = {() => this.handleDelete()}>{this.props.sentence.id}</button></div>
+		        <button onClick={() => this.props.handleDelete(this.props.sentence.id)} className="btn btn-danger">Delete</button></div>
 			</div>
 		)
 	}

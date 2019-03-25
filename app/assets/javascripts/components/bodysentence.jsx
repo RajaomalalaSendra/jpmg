@@ -42,7 +42,7 @@ class BodySentence extends React.Component{
 	deleteSentence(id){
  		newSentences = this.state.sentences.filter((sentence) => sentence.id !== id)
         this.setState({
-            words: newSentences
+            sentences: newSentences
         })
  	}
    	componentDidMount(){

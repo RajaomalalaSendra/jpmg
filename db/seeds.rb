@@ -5,14 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-japanese = ['こにちは','ありがとうございます','日本','みんな','ごめんなさい','大丈夫']
-romanji = ['KONICHIWA','ARIGATO GOZAIMASU', 'NIHON', 'MINNA', 'GOMENNASAI', 'DAIJOBU']
-malagasy = ['manahoana', 'misaotra betsaka', 'Japana', 'ny rehetra', 'miala tsiny', 'tsara']
-6.times do |i|
-	Word.create(japanese: japanese[i], romanji: romanji[i], malagasy: malagasy[i])
-end
+# japanese = ['こにちは','ありがとうございます','日本','みんな','ごめんなさい','大丈夫']
+# romanji = ['KONICHIWA','ARIGATO GOZAIMASU', 'NIHON', 'MINNA', 'GOMENNASAI', 'DAIJOBU']
+# malagasy = ['manahoana', 'misaotra betsaka', 'Japana', 'ny rehetra', 'miala tsiny', 'tsara']
+# 6.times do |i|
+# 	Word.create(japanese: japanese[i], romanji: romanji[i], malagasy: malagasy[i])
+# end
 require 'csv'
-words = CSV.read("/home/malala/Downloads/fra-eng/fra.csv")
+words = CSV.read("fra.csv")
 50.times do |i|
   Sentence.create(english: words[i][0], french: words[i][1])
 end

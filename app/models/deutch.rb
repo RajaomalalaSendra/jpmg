@@ -1,0 +1,2 @@
+class Deutch < ApplicationRecord
+end

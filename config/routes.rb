@@ -9,6 +9,16 @@ Rails.application.routes.draw do
   get 'menu/thesaurus/japanese', to: 'thesaurus#japanese'
   get 'menu/thesaurus/french', to: 'thesaurus#french'
   get 'menu/thesaurus/german', to: 'thesaurus#german'
+  # This is the routes for the german
+  namespace :menu do
+    namespace :thesaurus do
+      namespace :api do 
+        namespace :v001 do 
+          resources :deutches, only: [:index, :create, :destroy, :update]
+        end 
+      end
+    end  
+  end
   # This is the routes for the japanese
   namespace :menu do
     namespace :thesaurus do
@@ -28,5 +38,5 @@ Rails.application.routes.draw do
         end 
       end 
     end
-  end
+  end  
 end

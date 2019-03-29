@@ -1,0 +1,2 @@
+class German < ApplicationRecord
+end

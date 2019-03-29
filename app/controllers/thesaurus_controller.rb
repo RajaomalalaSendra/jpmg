@@ -5,4 +5,6 @@ class ThesaurusController < ApplicationController
   end
   def japanese
   end
+  def german
+  end
 end

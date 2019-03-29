@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'about', to: 'menu#about'
   get 'menu/thesaurus/japanese', to: 'thesaurus#japanese'
   get 'menu/thesaurus/french', to: 'thesaurus#french'
+  get 'menu/thesaurus/german', to: 'thesaurus#german'
   # This is the routes for the japanese
   namespace :menu do
     namespace :thesaurus do

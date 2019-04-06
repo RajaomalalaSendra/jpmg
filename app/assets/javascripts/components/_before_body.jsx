@@ -6,7 +6,7 @@ class BeforeBody extends React.Component{
 	}
 	handleFormSubmit(japanese,romanji,malagasy){
 	    let body = JSON.stringify({word: {japanese: japanese, romanji: romanji, malagasy: malagasy}});
-        fetch(`http://localhost:3000/api/v001/words`, {
+        fetch(`http://localhost:3000/menu/thesaurus/api/v001/words`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -28,7 +28,7 @@ class BeforeBody extends React.Component{
 			<div>
 				<Menu />
 				<Show />
-				<div className="col-md-10" style={{marginTop: '-100px', marginLeft:'200px'}}>
+				<div className="col-md-10" style={{marginTop: '-100px', marginLeft:'240px'}}>
 					<div className="container bg-light">
 						<h2>日本語好きです。NIHONGO SUKI DESU. Tiako ny teny Japoney.</h2> 
 						<NewWord  handleFormSubmit={this.handleFormSubmit}/>

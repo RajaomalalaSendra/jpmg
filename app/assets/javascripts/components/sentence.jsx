@@ -3,7 +3,7 @@ const Sentence =  () => {
         <div>
     		<Menu />
 			<Show />
-			<div className="col-md-10" style={{marginTop: '-100px', marginLeft:'200px'}}>
+			<div className="col-md-10" style={{marginTop: '-100px', marginLeft:'240px'}}>
 				<div className="container bg-light">
 					<h2>We Love ENglish-J'aime le FRancais-Tiako ny teny MalaGasy</h2> 
 					<div className="row">

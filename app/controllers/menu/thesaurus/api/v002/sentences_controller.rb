@@ -1,4 +1,4 @@
-class Api::V002::SentencesController < ApplicationController
+class  Menu::Thesaurus::Api::V002::SentencesController < ApplicationController
   def index
     render json: Sentence.all
   end

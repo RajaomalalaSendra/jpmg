@@ -1,4 +1,4 @@
-class Api::V001::WordsController < ApplicationController
+class  Menu::Thesaurus::Api::V001::WordsController < ApplicationController
   def index
     render json: Word.all
   end

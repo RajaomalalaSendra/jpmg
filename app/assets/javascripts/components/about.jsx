@@ -72,9 +72,9 @@ const About = (props) => {
 				    <div className="row">
 				    	<div className="col-md-4 rounded">
 				    		<div className="card">
-				    			<a href="/menu/thesaurus">
+				    			<a href="/menu/thesaurus/japanese">
 					    			<img src="1.png" alt="the first picture" style={{width: '50%',}}/>
-					    			<h3>THESAURUS</h3>
+					    			<h3>JAPANESE AND MALAGASY</h3>
 					    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -84,9 +84,9 @@ const About = (props) => {
 				    	</div>
 				    	<div className="col-md-4 rounded">
 				    		<div className="card">
-				    			<a href="/menu/machinetranslation">
+				    			<a href="/menu/thesaurus/french">
 						    		<img src="2.png" alt="the second picture" style={{width: '50%',}}/>
-						    		<h3>MACHINE TRANSLATION</h3>
+						    		<h3>ENGLISH FRENCH MALAGASY</h3>
 						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -96,9 +96,9 @@ const About = (props) => {
 				    	</div>
 				    	<div className="col-md-4 rounded">
 				    		<div className="card">
-				    			<a href="/menu/proverbs">
+				    			<a href="/menu/thesaurus/japanese">
 						    		<img src="3.png" alt="the third picture" style={{width: '50%',}}/>
-						    		<h3>PROVERBS</h3>
+						    		<h3>JAPANESE AND MALAGASY</h3>
 						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

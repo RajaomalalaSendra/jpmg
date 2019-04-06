@@ -10,7 +10,7 @@ class Body extends React.Component {
 		this.updateWord = this.updateWord.bind(this);
 	}
 	handleDelete(id){
-   		 fetch(`http://localhost:3000/api/v001/words/${id}`, 
+   		 fetch(`http://localhost:3000/menu/thesaurus/api/v001/words/${id}`, 
     	{
       	method: 'DELETE',
       	headers: {
@@ -21,7 +21,7 @@ class Body extends React.Component {
       })
  	}
  	handleUpDate(word){
-	    fetch(`http://localhost:3000/api/v001/words/${word.id}`, 
+	    fetch(`http://localhost:3000/menu/thesaurus/api/v001/words/${word.id}`, 
 	    {
 	      method: 'PUT',
 	      body: JSON.stringify({word: word}),
@@ -46,7 +46,7 @@ class Body extends React.Component {
 	    })
 	 }
 	componentDidMount(){
-		fetch('api/v001/words.json')
+		fetch('/menu/thesaurus/api/v001/words.json')
 		.then((response) => {return response.json()})
 		.then((data) => {this.setState({ words: data }) })
 	}
